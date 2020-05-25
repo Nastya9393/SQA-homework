@@ -1,10 +1,17 @@
 package Task;
 
+import java.util.Scanner;
+
 public class Task91 {  
 	public static void main (String[] args) {
-		float [] czislo = {3.00f, 2.25f, 5.0f, 10.10f, 7.00f, 125.00f, 16.00f};
-		for (int i = czislo.length-1; i>=0; i--)
-		if (czislo[i]%1 == 0) System.out.println(czislo[i] + "\t - не имеет вещественной части,"); else System.out.println(czislo[i]+"\t - имеет вещественную часть,");
-		System.out.println("количество проверенных чисел: " + czislo.length); // дополнительно к заданию
+		System.out.print("Введите натуральное число X:\t");
+		Scanner sc = new Scanner(System.in);
+		int x = sc.nextInt(); 
+		System.out.print("введите натуральное число Y:\t");
+		int y = sc.nextInt();
+		sc.close();
+		System.out.println("\nРезультаты =>\n\tцелоцисленное деление X на Y:\t" + x/y);
+		System.out.println("\tостаток от деления X на Y:\t" + x%y);
+		System.out.println("\tквадратный корень X:\t\t" + Math.sqrt(x) + "\n\n! Вычисления закончены !");
 	}
 }
