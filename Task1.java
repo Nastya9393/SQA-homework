@@ -8,7 +8,10 @@ public class Task1 {
 
 	public static void main(String[] args) {
 		System.out.print("¬ведите число дн€ недели: ");
-
+		Scanner sc = new Scanner(System.in);
+		int nd = sc.nextInt();
+		sc.close();
+		System.out.print("Ёто будет " + nd);
 	}
 
 }
